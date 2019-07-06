@@ -173,12 +173,12 @@ img{
 
 #paperArea{
 	font-family: 'Finger Paint';	
-	background-image: url("Website_Resources/paperBackground.jpg");
+	background-image: url("paperBackground.jpg");
 	/*background-repeat: no-repeat;*/
 	background-position: center;
 	/*background-size: cover;*/	
 	background-clip: padding-box;	
-	border-image: url("Website_Resources/paperBackground2.png") 20 round;
+	border-image: url("paperBackground2.png") 20 round;
 	border-top:    30px solid;
 	border-bottom: 30px solid;
 	border-right:  20px solid;

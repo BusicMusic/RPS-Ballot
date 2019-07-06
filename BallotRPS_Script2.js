@@ -111,7 +111,7 @@ function startGame(){
 	document.getElementById("userCard3").setAttribute("onClick", "playCard(this.id)");
 	var f= document.getElementsByClassName("cards");
 	for (x=0; x<6; x++){
-		f[x].src="Website_Resources/cardBack1.png"
+		f[x].src="cardBack1.png"
 		f[x].style.opacity="1.0";
 		if (x>2){
 			f[x].onmousemove= function(){this.style.boxShadow= "inset 0px 0px 15px 2px rgba(255, 0, 0, 0.6)";}
@@ -184,11 +184,11 @@ function displayNpcCards(npcValue){
 	var npcCardFront= document.getElementById("npcCard"+((npcHand.indexOf(npcValue))+1));
 	
 	if (npcValue=="Rock")
-		npcCardFront.src="Website_Resources/rock.png";
+		npcCardFront.src="rock.png";
 	if (npcValue=="Paper")
-		npcCardFront.src="Website_Resources/paper.png";
+		npcCardFront.src="paper.png";
 	if (npcValue=="Scissors")
-		npcCardFront.src="Website_Resources/scissors.png";
+		npcCardFront.src="scissors.png";
 }
 function playCard(playedCard){
 	var playedCard= playedCard;
@@ -210,7 +210,7 @@ function playCard(playedCard){
 	var cards= [document.getElementById("userCard1").id, document.getElementById("userCard2").id, document.getElementById("userCard3").id];
 	for (var x=0; x<3; x++){
 		if (cards[x]!=playedCard)
-			document.getElementById(cards[x]).src=("Website_Resources/cardBack1.png");
+			document.getElementById(cards[x]).src=("cardBack1.png");
 	}
 	
 	var npcChosenCard= (npcHand[(RNG(3)-1)]);
@@ -251,31 +251,31 @@ function changeGameScene(result){
 
 function changeImages(){
 	if (playerHand[0]=="Rock")
-		document.getElementById("userCard1").src="Website_Resources/rock.png";
+		document.getElementById("userCard1").src="rock.png";
 	else if (playerHand[0]=="Paper")
-		document.getElementById("userCard1").src="Website_Resources/paper.png";
+		document.getElementById("userCard1").src="paper.png";
 	else if (playerHand[0]=="Scissors")
-		document.getElementById("userCard1").src="Website_Resources/scissors.png";
+		document.getElementById("userCard1").src="scissors.png";
 	else
-		document.getElementById("userCard1").src="Website_Resources/cardBack1.png";
+		document.getElementById("userCard1").src="cardBack1.png";
 	
 	if (playerHand[1]=="Rock")
-		document.getElementById("userCard2").src="Website_Resources/rock.png";
+		document.getElementById("userCard2").src="rock.png";
 	else if (playerHand[1]=="Paper")
-		document.getElementById("userCard2").src="Website_Resources/paper.png";
+		document.getElementById("userCard2").src="paper.png";
 	else if (playerHand[1]=="Scissors")
-		document.getElementById("userCard2").src="Website_Resources/scissors.png";
+		document.getElementById("userCard2").src="scissors.png";
 	else
-		document.getElementById("userCard2").src="Website_Resources/cardBack1.png";
+		document.getElementById("userCard2").src="cardBack1.png";
 	
 	if (playerHand[2]=="Rock")
-		document.getElementById("userCard3").src="Website_Resources/rock.png";
+		document.getElementById("userCard3").src="rock.png";
 	else if (playerHand[2]=="Paper")
-		document.getElementById("userCard3").src="Website_Resources/paper.png";
+		document.getElementById("userCard3").src="paper.png";
 	else if (playerHand[2]=="Scissors")
-		document.getElementById("userCard3").src="Website_Resources/scissors.png";
+		document.getElementById("userCard3").src="scissors.png";
 	else
-		document.getElementById("userCard3").src="Website_Resources/cardBack1.png";
+		document.getElementById("userCard3").src="cardBack1.png";
 }
 
 //Part Three: Bidding Scripts
