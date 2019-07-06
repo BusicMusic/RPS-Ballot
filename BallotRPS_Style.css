@@ -1,0 +1,385 @@
+/*
+Brendon Busic
+Software Capstone - ECPI University
+*/
+
+/*CSS for Header + Banner section*/
+html{
+	background-color: black;
+	color:white;
+	height: 1400px;
+}
+#header{
+	text-align: center;
+	color: red;
+	padding-bottom: 10px;
+	width: 1575px;
+	background-image: url("Website_Resources/bannerImg1.png");
+	height: 250px;
+	margin-top: -10px;
+	margin-left: -5px;
+}
+#topText{
+	font-size: 75pt;
+	padding-top: 5px;
+	letter-spacing: 50px;
+	padding-top: 50px;
+	text-shadow: 0px 0px 10px black;
+}
+#subTopText{
+	font-style: bold;
+	text-align: right;
+	padding-top: 50px;
+}
+#subTopText>a{
+	margin-top: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	color: black;
+}
+#subTopText>hover{
+	text-shadow: 0px 0px 1px white;	
+}
+
+/*CSS for Navigation Column*/
+#navCol{
+	border-style: solid solid solid none;
+	border-width: 2px;
+	border-radius: 5px;
+	background-color: balck;
+	width: 195px;
+	margin-left: -7px;
+	background-color: black;
+	border-color: red;
+	padding: 10px;
+	margin-top: 5px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+	float: left;
+	height: auto;
+	
+}
+#options>hr{
+	border: 1px solid firebrick;
+}
+#options>a{
+	text-decoration: none;
+	color: red;
+}
+#options>a:hover{
+	cursor: pointer;
+	font-style: italic;
+}
+#inputMenu{
+	text-align: center;
+}
+#inputMenu>input{
+	height: 25px;
+	font-size: 11pt;
+	text-align: center;
+	background: none;
+	color: red;
+	border-radius: 10px;
+}
+#navColBtn{
+	width: 200px;
+	height: 25px;
+	font-size: 11pt;
+	text-align: left;
+	background: none;
+	border: none;
+	color: red;
+}
+#navColBtn:hover, #inputMenu>input:hover{
+	cursor: pointer;
+	background-color: #222223;
+	border-radius: 10px;
+}
+#navColBtn:hover{
+	cursor: pointer;
+	text-indent: 7.5px;
+}
+
+/*CSS for the Overview + Main Content of the Webpage*/
+p{
+	text-indent: 50px;
+}
+#overview{
+	margin-left: 10px;
+	width: 1250px;
+}
+#overview>h3{
+	text-align: center;
+}
+#mainContent{
+	display: block;	
+}
+
+/*CSS for the game play area*/
+.playArea{
+	float: left;
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	padding: 5px;
+	height: 520px;
+	/*border: 1px solid cyan;*/
+	font-size: 11pt;
+	
+	box-shadow: 0px 0px 10px black;
+	border-radius: 10%;
+	
+	color:black;
+}
+/*#textArea{
+	text-align: left;
+	width: 305px;
+	margin-top: 10px;
+	margin-left: 930px;
+	height: 540px;
+}*/
+#gameArea{
+	text-align: center;
+	width: 1300px;
+}
+#cardArea{
+	width: 550px;
+}
+img{
+	max-width: 150px;
+	padding:10px;
+	border-radius: 20px;
+}
+#npcCard1{
+	transform: rotate(190deg);
+}
+#npcCard2{
+	margin-left: -60px;
+	margin-top: 20px;
+	transform: rotate(180deg);
+}
+#npcCard3{
+	margin-left: -60px;
+	transform: rotate(170deg);
+}
+#npcCards, #playerCards{
+	display: block;
+	text-align: center;
+	
+}
+
+#paperArea{
+	font-family: 'Finger Paint';	
+	background-image: url("Website_Resources/paperBackground.jpg");
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	/*background-size: cover;*/	
+	background-clip: padding-box;	
+	border-image: url("Website_Resources/paperBackground2.png") 20 round;
+	border-top:    30px solid;
+	border-bottom: 30px solid;
+	border-right:  20px solid;
+	border-left:   20px solid;
+	
+	height: 600px;
+	
+	color: dimgray;
+	background-color: white;
+}
+
+/*CSS for the Text Area section*/
+#textArea{
+	text-align: left;
+	width: 305px;
+}
+#gameEvents{
+	height: 445px;
+	display: block;
+	overflow-y: scroll;
+	width: 300px;
+	margin-top: -5px;
+}
+#gameResultsArea{
+}
+
+/*CSS for the Table, Table Rows, and Table Columns*/
+table, th, td{
+	text-align:center;
+}
+#gameStats{
+	width:305px;
+	border-bottom: 1px solid dimgrey;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#gP, #gamesPlayed{
+	color: teal;
+	text-shadow: 0px 0px 5px teal;
+}
+#w, #gamesWon{
+	color: ForestGreen;
+	text-shadow: 0px 0px 5px green;
+}
+#t, #gamesTied{
+	color: GoldenRod;
+	text-shadow: 0px 0px 5px yellow;
+}
+#l, #npcWins{
+	color: red;
+	text-shadow: 0px 0px 5px red;
+}
+
+/*CSS for the bidding area*/
+#biddingArea{
+	width: 300px;
+}
+#moneyAmounts{
+	width: 300px;
+	letter-spacing: 1px;
+	font-size: 13pt;
+	border-bottom: 1px solid dimgrey;
+}
+#biddingInfo{
+	text-align: left;
+	height: 345px;
+	display: block;
+	overflow-y: scroll;
+	padding: 5px;
+	
+}
+#npcBidAmount{
+	display: block;
+	letter-spacing: 1px;
+	font-size: 12pt;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	color: teal;
+	text-shadow: 0px 0px 5px teal;
+}
+#userBidAmount{
+	display: block;
+	letter-spacing: 1px;
+	font-size: 12pt;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	color: teal;
+	text-shadow: 0px 0px 5px teal;
+}
+#biddingInput{
+	display: block;
+	border-top: 1px solid dimgrey;
+	margin-top: 5px;
+}
+.olderListItems{
+	opacity: .25;
+}
+li{
+	padding-bottom: 5px;
+}
+
+/*Button CSS*/
+.button{
+	font-family: 'Finger Paint';
+		
+	border-radius: 100px;
+	width: 75px;
+	height: 30px;
+	font-size: 13pt;
+	color: dimgray;
+	border: none;
+	background: none;
+	box-shadow: inset 0px 0px 5px 1px black;
+	letter-spacing: 2px;
+	margin-top: 15px;
+}
+#startBtn{
+	border-radius: 100px;
+	width: 250px;
+	height: 30px;
+	font-size: 15pt;
+	border: none;
+	background:none;
+	letter-spacing: 2px;
+	margin-top: -10px;
+	margin-left:  450px;
+	margin-right: 450px;
+}
+.button:hover{
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14pt;
+	cursor: pointer;
+}
+#startBtn:hover{
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 15pt;
+	cursor: pointer;
+}
+#addBtns{
+	float: right;
+	margin-right: 5px;
+}
+#minusBtns{
+	float: left;
+	margin-left: 5px;
+}
+
+/*Replay Screen CSS*/
+#endGameResults{
+  	width: 1250px;
+  	height: 600px;
+  	background-color: rgba(0,0,0,0.5);
+  	z-index: 2;
+  	position: absolute;
+  	padding: 5px;
+  	margin-top: 25px;
+  	margin-left: 20px;
+
+  	border-radius: 10%;
+}
+#endGameResults-content{
+	font-family: 'Finger Paint';
+	text-align: center;
+}
+#resetButton{
+	color: white;
+	width: 400px;
+	box-shadow: inset 0px 0px 5px 1px snow;
+}
+.smallerHeader{
+	font-size: 13pt;
+}
+.result{
+	font-style: italic;
+}
+#lifeResult{
+	margin-left: 450px;
+	width: 350px;
+}
+
+#quitButton{
+	font-family: 'Finger Paint';
+		
+	border-radius: 100px;
+	width: 240px;
+	height: 30px;
+	font-size: 13pt;
+	color: white;
+	border: none;
+	background: none;
+	box-shadow: inset 0px 0px 5px 1px white;
+	letter-spacing: 2px;
+	margin-top: 15px;
+	margin-left: 529px;
+}
+#quitButton:hover{
+	cursor: pointer;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 14pt;

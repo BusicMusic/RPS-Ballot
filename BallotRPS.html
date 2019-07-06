@@ -1,0 +1,130 @@
+<!--
+Brendon Busic
+Software Capstone - ECPI University
+-->
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Ballot Rock Paper Scissors</title>
+   <link href="BallotRPS_Style.css" rel="stylesheet" type="text/css"/>
+   <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+   <script src="BallotRPS_Script2.js" type="text/javascript"></script>
+  </head>
+  <body>
+   
+   <div id="header">
+    <div id="topText">Kakegurui  Club</div>
+	<div id="subTopText"><a id="photoLink" href="https://imgur.com/gallery/J0H15S7">Photo created by: Deizions</a></div>
+   </div>
+   
+   <div id="mainContent">
+    <div id="overview"> <!--Rules-->
+	 <h3>Ballot Rock Paper Scissors</h3>
+	 <h2>Basic Concept</h2>
+	 <p>
+	  Ballot Rock Paper Scissors is an interesting take on an old school game that almost everyone knows how to play. Just like in 'normal' RPS, Rock beats Scissors, Scissors beat Paper, and Paper beats Rock. However, there's an interesting twist to this version.
+	  In Ballot RPS there are thirty blank cards that will be used for the game. Each one of the thirty cards then has a picture of a Rock, a piece of Paper, or a pair of Scissors drawn onto it, and are then placed inside a box to be drawn from.
+	  Once all thirty cards have been placed in the box, the two players will then draw three cards without looking. You then play Rock Paper Scissors while only being able to use one of the three choices on the cards that you hold. For example, if you draw two Scissors and one Rock, you cannot play a Paper.
+	 </p>
+	 <h2>Bidding</h2>
+	 <p>
+	   Bids can be changed at any time until you choose what card to play. The winner recieves the sum of the bids, and <i>the game is considered over once one of the players has $0 remaining</i>. In the event of a draw, both players will be returned the amount of money they wagered. No winners, no money lost/won. Once one of the players have won that round, the process starts again with thirty new blank cards to be drawn on and used for that round.
+	  </p>
+	  <p style="text-align: center; font-size: 10pt;">
+	   <i>TRY AND SEE HOW MANY ROUNDS YOU CAN PLAY WITHOUT ENDING THE GAME</i>
+	  </p>
+	 </div>
+	 
+	 <div id="gameArea">	  
+	  <div id="endGameResults" style="display: none;">
+	   <div id="endGameResults-content">
+	   	<h1>GAME  OVER</h1>
+	   	<div class="smallerHeader">Results</div><br/>
+
+	   	<div class="smallerHeader">Overall Winner</div>
+	   	<div class="result" id="winner">?</div><br/>
+
+	   	<div class="smallerHeader">Rounds Played</div>
+	   	<div class="result" id="roundsPlayed">?</div><br/>
+
+	   	<div class="smallerHeader">Highest Held Cash</div>
+	   	<div class="result" id="highestCash">?</div><br/>
+
+	   	<div class="smallerHeader">Longest Win Streak</div>
+	   	<div class="result" id="winStreak">?</div><br/>
+
+	   	<div class="smallerHeader" id="lifeResult">?</div>
+
+		<button type="button" class="button" id="resetButton" onclick="restartGame()">Get a Loan and Play Again</button>
+	   </div>
+	  </div>
+
+	  <div id="paperArea">
+	   <div id="biddingArea" class="playArea">
+	    <table id="moneyAmounts">
+	     <tr>
+		  <td>NPC Money</td>
+		  <td id="npcMons">$ ? ? ?</td>
+		 </tr>
+		 <tr></tr>
+		 <tr>
+		  <td>Player Money</td>
+		  <td id="userMons">$ ? ? ?</td>
+		 </tr>
+	    </table>
+	    <div id="biddingInfo">
+	     <ul id="biddingEvents"></ul>
+	    </div>
+		<div id="biddingInput">
+	     <div id="minusBtns">
+	      <button id="minus50" class="button" type="button" onclick="minus50()" disabled>-50</button><br/>
+	      <button id="minus250" class="button" type="button" onclick="minus250()"disabled>-250</button>
+	     </div>
+	     <div id="addBtns">
+	      <button id="add50" type="button" class="button" onclick="add50()" disabled>+50</button><br/>
+	      <button id="add250" type="button" class="button" onclick="add250()" disabled>+250</button>
+	     </div>
+	     <div id="npcBidAmount">NPC Bid: $0</div>
+		 <div id="userBidAmount">Your Bid: $0</div>
+	    </div>
+	   </div>
+	   <div id="cardArea" class="playArea">
+	     <div id="npcCards">
+	      <img id="npcCard1" class="cards" src="Website_Resources/cardBack1.png"/>
+	      <img id="npcCard2" class="cards" src="Website_Resources/cardBack1.png"/>
+	      <img id="npcCard3" class="cards" src="Website_Resources/cardBack1.png"/>
+	    </div>
+	    <hr/>
+	     <div id="playerCards">
+	      <img id="userCard1" class="cards" src="Website_Resources/cardBack1.png"/>
+	      <img id="userCard2" class="cards" src="Website_Resources/cardBack1.png"/>
+	      <img id="userCard3" class="cards" src="Website_Resources/cardBack1.png"/>
+	    </div>
+	   </div>
+	   <div id="textArea"class="playArea">
+	   <table id="gameStats">
+	    <tr>
+	     <td id="gP">Rounds Played</td>
+	     <td id="w">Wins</td>
+	     <td id="t">Ties</td>
+	     <td id="l">Loses</td>
+	    </tr>
+	    <tr>
+	     <td id="gamesPlayed">0</td>
+	     <td id="gamesWon">0</td>
+	     <td id="gamesTied">0</td>
+	     <td id="npcWins">0</td>
+	    </tr>
+	   </table>
+	   <div id="gameEvents">
+	    <ul id="gameResultsArea"></ul>
+	   </div>
+	  </div>	     
+	  <input id="startBtn" class="button" type="button" value="Draw  Cards" onclick="startGame()"/>
+	  </div>
+	 </div>
+     </div>
+	 <br/><br/>
+	 <a href="https://busicmusic.github.io"><button id="quitButton">Back to Main Menu</button></a>
+  </body>
+ </html>
